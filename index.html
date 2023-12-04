@@ -19,7 +19,7 @@
     <header th:fragment="header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
-          <a class="btn navbar-brand" th:href="@{/question}">Exam Webapp</a>
+          <a class="btn navbar-brand" th:href="@{/question}">Furama Webapp</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -37,16 +37,16 @@
                 <a class="nav-link me-3 btn btn-primary">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3 btn btn-primary">About</a>
+                <a class="nav-link me-3 btn btn-primary">Employee</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3 btn btn-primary">Contact</a>
+                <a class="nav-link me-3 btn btn-primary">Customer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3 btn btn-primary">Login</a>
+                <a class="nav-link me-3 btn btn-primary">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn btn-primary">Register</a>
+                <a class="nav-link me-3 btn btn-primary">Contract</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -62,8 +62,8 @@
                   class="dropdown-menu dropdown-menu-end"
                   aria-labelledby="navbarDropdownPortfolio"
                 >
-                  <li><a class="dropdown-item">Create</a></li>
-                  <li><a class="dropdown-item">Logout</a></li>
+                  <li><a class="dropdown-item">Login</a></li>
+                  <li><a class="dropdown-item">Register</a></li>
                 </ul>
               </li>
             </ul>
@@ -81,6 +81,8 @@
 
       <br /><br />
     </header>
+
+    <h1 class="text-center">Home</h1>
     <!-- Footer -->
     <footer class="bg-dark py-4 mt-auto" th:fragment="footer">
       <div class="container px-5">

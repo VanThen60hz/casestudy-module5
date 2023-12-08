@@ -18,23 +18,6 @@
       rel="stylesheet"
     />
 
-    <!-- Pagination -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"
-    />
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="https://code.jquery.com/jquery-3.5.1.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"
-    ></script>
-
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
@@ -83,7 +66,7 @@
         <ul>
           <li class="active"><a href="./index.html">Home</a></li>
           <li><a href="./rooms.html">Rooms</a></li>
-          <li><a href="./customer.html">Customer</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
           <li>
             <a href="./pages.html">Pages</a>
             <ul class="dropdown">
@@ -162,10 +145,8 @@
                   <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./employee.html">Employee</a></li>
+                    <li><a href="./customer.html">Customer</a></li>
                     <li class="active">
-                      <a href="./customer.html">Customer</a>
-                    </li>
-                    <li>
                       <a href="./service.html">Service</a>
                       <ul class="dropdown">
                         <li><a href="./villa-details.html">Villa</a></li>
@@ -187,221 +168,141 @@
     </header>
     <!-- Header End -->
 
-    <!-- Breadcrumb Section Begin -->
-    <div class="breadcrumb-section">
+    <!-- Contact Section Begin -->
+    <section class="contact-section spad">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="breadcrumb-text">
-              <h2>Customer</h2>
-              <div class="bt-option">
-                <a href="./index.html">Home</a>
-                <span>Customer</span>
-              </div>
+          <div class="col-lg-5">
+            <div class="contact-text">
+              <h2>Customer Name</h2>
+              <p>You can edit customer here</p>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="c-o">Full Name:</td>
+                    <td>Mark Otto</td>
+                  </tr>
+                  <tr>
+                    <td class="c-o">Date of Birth:</td>
+                    <td>1990-01-15</td>
+                  </tr>
+                  <tr>
+                    <td class="c-o">Gender:</td>
+                    <td>Male</td>
+                  </tr>
+                  <tr>
+                    <td class="c-o">ID Card Number:</td>
+                    <td>123456789</td>
+                  </tr>
+                  <tr>
+                    <td class="c-o">Phone Number:</td>
+                    <td>123-456-7890</td>
+                  </tr>
+                  <tr>
+                    <td class="c-o">Email:</td>
+                    <td>mark@example.com</td>
+                  </tr>
+                  <tr>
+                    <td class="c-o">Customer Type:</td>
+                    <td>Diamond</td>
+                  </tr>
+                  <tr>
+                    <td class="c-o">Address:</td>
+                    <td>123 Main Street, City</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- Customer list section -->
-    <section class="customer-list">
-      <table
-        id="customerTable"
-        class="table table-bordered table-hover mx-auto"
-        style="width: 90%"
-      >
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Full Name</th>
-            <th scope="col">Date of Birth</th>
-            <th scope="col">Gender</th>
-            <th scope="col">ID Card Number</th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Email</th>
-            <th scope="col">Customer Type</th>
-            <th scope="col">Address</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Sample customer data -->
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark Otto</td>
-            <td>1990-01-15</td>
-            <td>Male</td>
-            <td>123456789</td>
-            <td>123-456-7890</td>
-            <td>mark@example.com</td>
-            <td>Diamond</td>
-            <td>123 Main Street, City</td>
-            <td class="d-flex justify-content-between">
-              <a href="./edit-customer.html" class="btn btn-primary">Edit</a>
-              <a class="btn btn-danger">Delete</a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Mark Otto</td>
-            <td>1990-01-15</td>
-            <td>Male</td>
-            <td>123456789</td>
-            <td>123-456-7890</td>
-            <td>mark@example.com</td>
-            <td>Diamond</td>
-            <td>123 Main Street, City</td>
-            <td class="d-flex justify-content-between">
-              <a href="./edit-customer.html" class="btn btn-primary">Edit</a>
-              <a class="btn btn-danger">Delete</a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Mark Otto</td>
-            <td>1990-01-15</td>
-            <td>Male</td>
-            <td>123456789</td>
-            <td>123-456-7890</td>
-            <td>mark@example.com</td>
-            <td>Diamond</td>
-            <td>123 Main Street, City</td>
-            <td class="d-flex justify-content-between">
-              <a href="./edit-customer.html" class="btn btn-primary">Edit</a>
-              <a class="btn btn-danger">Delete</a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Mark Otto</td>
-            <td>1990-01-15</td>
-            <td>Male</td>
-            <td>123456789</td>
-            <td>123-456-7890</td>
-            <td>mark@example.com</td>
-            <td>Diamond</td>
-            <td>123 Main Street, City</td>
-            <td class="d-flex justify-content-between">
-              <a href="./edit-customer.html" class="btn btn-primary">Edit</a>
-              <a class="btn btn-danger">Delete</a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Mark Otto</td>
-            <td>1990-01-15</td>
-            <td>Male</td>
-            <td>123456789</td>
-            <td>123-456-7890</td>
-            <td>mark@example.com</td>
-            <td>Diamond</td>
-            <td>123 Main Street, City</td>
-            <td class="d-flex justify-content-between">
-              <a href="./edit-customer.html" class="btn btn-primary">Edit</a>
-              <a class="btn btn-danger">Delete</a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>Mark Otto</td>
-            <td>1990-01-15</td>
-            <td>Male</td>
-            <td>123456789</td>
-            <td>123-456-7890</td>
-            <td>mark@example.com</td>
-            <td>Diamond</td>
-            <td>123 Main Street, City</td>
-            <td class="d-flex justify-content-between">
-              <a href="./edit-customer.html" class="btn btn-primary">Edit</a>
-              <a class="btn btn-danger">Delete</a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td>Mark Otto</td>
-            <td>1990-01-15</td>
-            <td>Male</td>
-            <td>123456789</td>
-            <td>123-456-7890</td>
-            <td>mark@example.com</td>
-            <td>Diamond</td>
-            <td>123 Main Street, City</td>
-            <td class="d-flex justify-content-between">
-              <a href="./edit-customer.html" class="btn btn-primary">Edit</a>
-              <a class="btn btn-danger">Delete</a>
-            </td>
-          </tr>
-          <!-- Add more customer records here -->
-        </tbody>
-      </table>
-      <div class="col-lg-12">
-        <div class="customer-pagination">
-          <a href="#!">Prev <i class="fa fa-long-arrow-left"></i></a>
-          <a href="#!">1</a>
-          <a href="#!">2</a>
-          <a href="#!">Next <i class="fa fa-long-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section Begin -->
-    <section class="gallery-section spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <span>Our Gallery</span>
-              <h2>Discover Our Work</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div
-              class="gallery-item set-bg"
-              data-setbg="img/gallery/gallery-1.jpg"
-            >
-              <div class="gi-text">
-                <h3>Room Luxury</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
+          <div class="col-lg-6 offset-lg-1">
+            <form action="#" class="cusomer-form">
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="fullName">Full Name:</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Customer's Full Name"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="dob">Date of Birth:</label>
+                  <input
+                    type="text"
+                    id="dob"
+                    name="dob"
+                    placeholder="Customer's Date of Birth"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="gender">Gender:</label>
+                  <input
+                    type="text"
+                    id="gender"
+                    name="gender"
+                    placeholder="Customer's Gender"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="idCardNumber">ID Card Number:</label>
+                  <input
+                    type="text"
+                    id="idCardNumber"
+                    name="idCardNumber"
+                    placeholder="Customer's ID Card Number"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="phoneNumber">Phone Number:</label>
+                  <input
+                    type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Customer's Phone Number"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Customer's Email"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="address">Address:</label>
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="Customer's Address"
+                  />
+                </div>
                 <div
-                  class="gallery-item set-bg"
-                  data-setbg="img/gallery/gallery-3.jpg"
+                  class="col-lg-6 d-flex justify-content-between align-items-center"
                 >
-                  <div class="gi-text">
-                    <h3>Room Luxury</h3>
-                  </div>
+                  <label for="customerType">Customer Type:</label>
+                  <select id="customerType" name="customerType">
+                    <option value="Diamond">Diamond</option>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Member">Member</option>
+                  </select>
+                </div>
+                <div class="col-lg-12">
+                  <textarea placeholder="Your Message"></textarea>
+                  <button type="submit">Edit customer</button>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div
-                  class="gallery-item set-bg"
-                  data-setbg="img/gallery/gallery-4.jpg"
-                >
-                  <div class="gi-text">
-                    <h3>Room Luxury</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div
-              class="gallery-item large-item set-bg"
-              data-setbg="img/gallery/gallery-2.jpg"
-            >
-              <div class="gi-text">
-                <h3>Room Luxury</h3>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- Gallery Section End -->
+    <!-- Contact Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -494,14 +395,6 @@
     </div>
     <!-- Search model end -->
 
-    <script>
-      $(document).ready(function () {
-        $("#customerTable").DataTable({
-          pageLength: 2,
-        });
-      });
-    </script>
-
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -511,6 +404,5 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- Add these links to your head section -->
   </body>
 </html>

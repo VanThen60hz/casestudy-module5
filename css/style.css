@@ -2411,3 +2411,8 @@ ol {
     margin-bottom: 10px;
   }
 }
+
+#pool-area-row,
+#free-service-row {
+  display: none;
+}
